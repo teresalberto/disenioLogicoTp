@@ -1,0 +1,116 @@
+C:/Users/user/Documents/u3f/disenologico/modelsim/Testbench.vhd {2 {vcom -work work -2002 -explicit -stats=none {C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity testbenchDecode
+-- Compiling architecture testDecode of testbenchDecode
+** Warning: C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity regs
+-- Compiling architecture registers_table_arq of regs
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity decode
+-- Compiling architecture edecode of decode
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Proc
+-- Compiling architecture Beh_Proc of Proc
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity mux
+-- Compiling architecture emux of mux
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu
+-- Compiling architecture ealu of alu
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity pc
+-- Compiling architecture epc of pc
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity IR
+-- Compiling architecture registroIR of IR
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity regout
+-- Compiling architecture registroRegout of regout
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity rom
+-- Compiling architecture erom of rom
+
+} {} {}} C:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity rega
+-- Compiling architecture registroRegA of rega
+
+} {} {}}

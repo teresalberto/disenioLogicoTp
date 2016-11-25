@@ -1,0 +1,274 @@
+----------------------------------------------------------------------------------
+-- Realizado por la catedra  Diseño Lógico (UNTREF) en 2015
+-- Tiene como objeto brindarle a los alumnos un template del procesador requerido
+-- Profesores Martín Vázquez - Lucas Leiva
+----------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+entity Proc is
+    Port ( clk : in  std_logic;
+           rst : in  std_logic;
+           input : in  STD_LOGIC_VECTOR (7 downto 0);
+           output : out  std_logic_vector (7 downto 0));
+end Proc;
+
+architecture Beh_Proc of Proc is
+
+-- ================
+-- Declaración de los componentes utilziados
+
+
+component pc port (
+	output : out  std_logic_vector (6 downto 0);
+	--//Secuenciales
+	clk : in  std_logic;
+	rst : in  std_logic);
+end component;
+
+component rom port (
+	addr : in  std_logic_vector (6 downto 0);
+	output : out  std_logic_vector (15 downto 0));
+end component;
+
+--//También cree una entidad aparte
+component ir port ( 
+	input : in  std_logic_vector (15 downto 0);
+	output : out  std_logic_vector (15 downto 0);
+	--//Secuenciales
+	clk : in  std_logic;
+	rst : in  std_logic);
+	--we : in  std_logic;
+end component;
+
+component decode port (	
+	input : in  std_logic_vector (7 downto 0);
+	out_we : out  std_logic;
+	reg_we : out  std_logic;
+	alu_op : out  std_logic_vector (2 downto 0);
+	reg_a_we: out  std_logic;
+	bus_sel : out  std_logic_vector (1 downto 0));
+end component;
+
+--//No es necesario, no es un componente que vaya a instanciar
+--component mux port ( 
+	--we : in  std_logic;
+        --input : in  std_logic_vector (7 downto 0);
+        --output : in  std_logic_vector (7 downto 0);
+--end component;
+
+component rega port ( 
+	input : in  std_logic_vector (7 downto 0);
+	output : out  std_logic_vector (7 downto 0);
+	--secuenciales
+	clk : in  std_logic;
+        rst : in  std_logic;
+        we : in  std_logic);
+end component;
+
+component alu port (
+	op: in  std_logic_vector (2 downto 0);
+	a,b : in  std_logic_vector (7 downto 0);
+	s : out  std_logic_vector (7 downto 0));
+end component; 
+
+component regs port (
+	rd : in  std_logic_vector (3 downto 0);
+	rs : in  std_logic_vector (3 downto 0);
+	din : in  std_logic_vector (7 downto 0);
+	dout : out  std_logic_vector (7 downto 0);
+	--secuenciales
+	clk : in  std_logic;
+        rst : in  std_logic;
+        we : in  std_logic);
+end component;
+ 
+component regout port (
+	input : in  std_logic_vector (7 downto 0);
+	output : out  std_logic_vector (7 downto 0);
+	--secuenciales
+	clk : in  std_logic;
+        rst : in  std_logic;
+        we : in  std_logic);
+end component;
+ 
+-- ================
+-- declaración de Señales 
+
+--PC
+signal pc_out_rom: std_logic_vector(6 downto 0);
+
+--ROM
+signal rom_out_ir: std_logic_vector(15 downto 0);
+
+--IR
+signal ir_out: std_logic_vector(15 downto 0);
+--signal ir_out_decode: std_logic_vector(15 downto 0);
+--signal ir_out_1mux: std_logic_vector(7 downto 0);
+--signal ir_out_rsregs: std_logic_vector(3 downto 0);
+--signal ir_out_rdregs: std_logic_vector(3 downto 0);
+
+--DECODE
+signal decode_out_regout: std_logic;
+signal decode_out_regs: std_logic;
+signal decode_out_alu: std_logic_vector(2 downto 0);
+signal decode_out_rega: std_logic;
+signal decode_out_mux: std_logic_vector(1 downto 0);
+
+--INPUT
+signal input_out_2mux: std_logic_vector(7 downto 0);
+
+--MUX
+signal mux_out_rega: std_logic_vector(7 downto 0);
+signal mux_out_alua: std_logic_vector(7 downto 0);
+
+--REGA
+signal rega_out_alub: std_logic_vector(7 downto 0);
+
+--ALU
+signal alu_out: std_logic_vector(7 downto 0);
+
+--REGS
+signal regs_out_0mux: std_logic_vector(7 downto 0);
+
+--REGOUT
+signal regout_out_output: std_logic_vector(7 downto 0);
+
+
+-- ================
+--aca empieza el cuerpo de la arquitectura
+
+begin
+
+-- ================
+-- Instaciacion de componentes utilziados
+
+--PC
+epc: pc Port map ( 
+	output => pc_out_rom,
+	clk => clk, 
+	rst => rst); 
+	--we => we);
+
+--ROM
+erom: rom Port map ( 
+	addr => pc_out_rom,
+	output => rom_out_ir);
+
+--IR
+eir: ir Port map ( 
+	input => rom_out_ir,
+--//asi agrego las 3 salidas--
+	output => ir_out,
+	--output => ir_out_1mux,
+	--output => ir_out_rsregs,
+	--output => ir_out_rdregs,
+	clk => clk, 
+	rst => rst); 
+	--we => we);
+
+edecode: decode Port map ( 
+	input => ir_out(15 downto 8),
+	out_we => decode_out_regout,
+	reg_we => decode_out_regs,
+	alu_op => decode_out_alu,
+	reg_a_we => decode_out_rega,
+	bus_sel => decode_out_mux);
+
+--//como agrego el INPUT al 2mux?
+
+--REGA
+erega: rega Port map ( 
+	input => mux_out_rega,
+	output => rega_out_alub,
+	clk => clk, 
+	rst => rst, 
+	we => decode_out_rega);
+
+--ALU
+ealu: alu Port map ( 
+	a => mux_out_alua,
+	b => rega_out_alub,
+	op => decode_out_alu,
+--//asi agrego dos salidas?
+	s => alu_out);
+	--clk => clk, 
+	--rst => rst);
+
+--REGS
+eregs: regs Port map ( 
+	din => alu_out,
+	we => decode_out_regs,
+	rd => ir_out(3 downto 0),
+	rs => ir_out(7 downto 4),
+	dout => regs_out_0mux,
+	clk => clk, 
+	rst => rst);
+
+--REGOUT
+eregout: regout Port map ( 
+	input => alu_out,
+	we => decode_out_regout,
+	output => regout_out_output,
+	clk => clk, 
+	rst => rst);
+ 
+
+-- ================
+-- Descripción de ROM en archivo aparte
+-- ================
+
+
+-- ================
+-- Descripción de IR en archivo aparte
+-- ================
+
+-- ================
+-- Descripción de DECODE en archivo aparte
+-- ================		
+
+-- ================
+-- Descripción de mux que funciona como "bus"
+-- controlado por bus_sel 
+emux: mux Port map (a,b,c,sel)
+process(a,b,c,sel)
+begin
+	case sel is
+		when "00" =>
+		salida <= a;
+		when "01" =>
+		salida <= b;
+		when others =>	output <= c;
+	end case;
+end process;
+
+-- ================
+-- Descripción de REGA en archivo aparte
+-- ================	
+
+-- ================
+-- Descripción de los almacenamientos
+-- Los almacenamientos que se deben decribir aca son: 
+-- <reg_a> 8 bits
+-- <reg_out> de 8 bits
+-- <pc> de 8 bits
+-- <ir> de 16 bits
+
+	process (clk, rst)
+	
+	begin
+	     if (rst='1') then 
+		  
+		  elsif (rising_edge(clk)) then
+		  
+		  end if;
+		  
+	end process;
+-- ================
+--un proceso por registro o un proceso para todos los secuenciales.
+
+end Beh_Proc;
+

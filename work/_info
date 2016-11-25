@@ -1,0 +1,703 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/16.1
+Ealu
+Z0 w1479680917
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/user/Documents/u3f/disenologico/modelsim
+Z6 8C:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd
+Z7 FC:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd
+l0
+L7
+V?6:MC6^48n5<K8Nf<GImJ2
+!s100 ?`?WTDZ0>0==zA98Fg?0m3
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1480036654
+!i10b 1
+Z10 !s108 1480036654.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd|
+Z12 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Alu.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Aealu
+R1
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 ?6:MC6^48n5<K8Nf<GImJ2
+l16
+L14
+V0B9AJW=O0gilKVn;Q7R;M2
+!s100 Iad^JzH9lCJaGD5ZcX6C22
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Cconf_count8tb
+ecount8_tb
+apractica
+Z15 DEx4 work 6 count8 0 22 7EjCEgdVif>8fL79:6BFS1
+DAx4 work 9 count8_tb 8 practica 22 I5n3_:;?DbhRi[n3aDm8;3
+R1
+R2
+R3
+R4
+Z16 DEx4 work 9 count8_tb 0 22 eIfSTo3P@<CoHo5ih@UgP0
+w1175719085
+R5
+8C:/Users/user/Documents/u3f/disenologico/modelsim/Conf_count8.vhd
+FC:/Users/user/Documents/u3f/disenologico/modelsim/Conf_count8.vhd
+l0
+L5
+VTJcm]oj_1PH7bd:[=h40>1
+!s100 JLniSgHdJfbML>@OCALD33
+R8
+32
+Z17 !s110 1478870386
+!i10b 1
+Z18 !s108 1478870386.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Conf_count8.vhd|
+!s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Conf_count8.vhd|
+!i113 1
+R13
+R14
+Ecount8
+Z19 w1175720366
+R1
+R2
+R3
+R4
+R5
+Z20 8C:/Users/user/Documents/u3f/disenologico/modelsim/Count8.vhd
+Z21 FC:/Users/user/Documents/u3f/disenologico/modelsim/Count8.vhd
+l0
+L12
+V7EjCEgdVif>8fL79:6BFS1
+!s100 9oI?8o8l9ZXG_b<LbHz]]0
+R8
+32
+R17
+!i10b 1
+R18
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Count8.vhd|
+Z23 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Count8.vhd|
+!i113 1
+R13
+R14
+Abeh_proc
+R1
+R2
+R3
+R4
+R15
+l60
+L57
+V6f4z`L`ojS:>?=GC<gh8M0
+!s100 =JD39?jVB^83_j2NY=Yke2
+R8
+32
+R17
+!i10b 1
+R18
+R22
+R23
+!i113 1
+R13
+R14
+Abeh_inst
+R1
+R2
+R3
+R4
+R15
+l41
+L22
+V^d7:3=d=O8SXZ?ikzeJG?0
+!s100 K3mi]RA<00d8KeN<lTm^Q3
+R8
+32
+R17
+!i10b 1
+R18
+R22
+R23
+!i113 1
+R13
+R14
+Ecount8_tb
+Z24 w1175720279
+R1
+R2
+R3
+R4
+R5
+Z25 8C:/Users/user/Documents/u3f/disenologico/modelsim/Count8_TB.vhd
+Z26 FC:/Users/user/Documents/u3f/disenologico/modelsim/Count8_TB.vhd
+l0
+L13
+VeIfSTo3P@<CoHo5ih@UgP0
+!s100 `cVN1zeZE_RPTM`:CdaQT2
+R8
+32
+R17
+!i10b 1
+R18
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Count8_TB.vhd|
+Z28 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Count8_TB.vhd|
+!i113 1
+R13
+R14
+Apractica
+R1
+R2
+R3
+R4
+R16
+l37
+L17
+VI5n3_:;?DbhRi[n3aDm8;3
+!s100 ^ikPgKZ>Dd?=WKYRZ`Pn]3
+R8
+32
+R17
+!i10b 1
+R18
+R27
+R28
+!i113 1
+R13
+R14
+Edecode
+Z29 w1479682975
+R1
+R2
+R3
+R4
+R5
+Z30 8C:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd
+Z31 FC:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd
+l0
+L6
+VTiaVHQ:I_G1MQMTY3WAB;0
+!s100 `9UmDL64<?7diOzV1gb=[1
+R8
+32
+Z32 !s110 1480036653
+!i10b 1
+Z33 !s108 1480036653.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd|
+Z35 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Decode.vhd|
+!i113 1
+R13
+R14
+Aedecode
+R1
+R2
+R3
+R4
+DEx4 work 6 decode 0 22 TiaVHQ:I_G1MQMTY3WAB;0
+l18
+L16
+V_?a@GGkm7^SGcoH72>5<>0
+!s100 8@Io=kDPY8VD8@Yc6b_]E3
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R13
+R14
+Effd
+Z36 w1175716872
+R1
+R2
+R3
+R4
+R5
+Z37 8C:/Users/user/Documents/u3f/disenologico/modelsim/ffd.vhd
+Z38 FC:/Users/user/Documents/u3f/disenologico/modelsim/ffd.vhd
+l0
+L12
+V<k7HDckPY:X[:_5ELmYk60
+!s100 hE5Kh;BfLg7d@KU3YUR[c0
+R8
+32
+R17
+!i10b 1
+Z39 !s108 1478870385.000000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/ffd.vhd|
+Z41 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/ffd.vhd|
+!i113 1
+R13
+R14
+Abeh_proc
+R1
+R2
+R3
+R4
+DEx4 work 3 ffd 0 22 <k7HDckPY:X[:_5ELmYk60
+l22
+L20
+VK0DodkP631SmRPTCn:?b<0
+!s100 ;]Gb:@@1WYU7JZVBYe;BE2
+R8
+32
+R17
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R13
+R14
+Eir
+Z42 w1479683445
+R1
+R2
+R3
+R4
+R5
+Z43 8C:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd
+Z44 FC:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd
+l0
+L6
+VL@R1:@fC_0^2>?B>f0S302
+!s100 Bi:O_U`gPG^@GB`a3h=UW2
+R8
+32
+R32
+!i10b 1
+R33
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd|
+Z46 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/IR.vhd|
+!i113 1
+R13
+R14
+Aregistroir
+R1
+R2
+R3
+R4
+DEx4 work 2 ir 0 22 L@R1:@fC_0^2>?B>f0S302
+l18
+L16
+Vlbn[mG_9RFA:FHY23MJYH0
+!s100 `8F^E9iQa<8aMEDF2=Gf60
+R8
+32
+R32
+!i10b 1
+R33
+R45
+R46
+!i113 1
+R13
+R14
+Emux
+Z47 w1480020688
+R1
+R2
+R3
+R4
+R5
+Z48 8C:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd
+Z49 FC:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd
+l0
+L6
+VERB93:3LKAJl3oSlJPJm13
+!s100 b3AzoAmcWLC4Io?eJk4bV1
+R8
+32
+Z50 !s110 1480036655
+!i10b 1
+Z51 !s108 1480036655.000000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd|
+Z53 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Emux.vhd|
+!i113 1
+R13
+R14
+Aemux
+R1
+R2
+R3
+R4
+DEx4 work 3 mux 0 22 ERB93:3LKAJl3oSlJPJm13
+l16
+L15
+V>2XGADYm=h[>]54`7[kZ^2
+!s100 cYoZC:;Z`2c9nVdkJmG6R1
+R8
+32
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R13
+R14
+Epc
+Z54 w1479688409
+R1
+R2
+R3
+R4
+R5
+Z55 8C:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd
+Z56 FC:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd
+l0
+L5
+V9ZC@:7YG7=Xfk7lBG^E_=1
+!s100 _]27Sn4_idN]DEK[l5;RP3
+R8
+32
+R9
+!i10b 1
+R10
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd|
+Z58 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Pc.vhd|
+!i113 1
+R13
+R14
+Aepc
+R1
+R2
+R3
+R4
+DEx4 work 2 pc 0 22 9ZC@:7YG7=Xfk7lBG^E_=1
+l15
+L12
+V3`G1<DgHCKM1ecZig1_hk2
+!s100 HljcnQ2HZO]z1Gb1U[]9_0
+R8
+32
+R9
+!i10b 1
+R10
+R57
+R58
+!i113 1
+R13
+R14
+Eproc
+Z59 w1480020145
+R1
+R2
+R3
+R4
+R5
+Z60 8C:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd
+Z61 FC:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd
+l0
+L12
+V?<V=zILT?dAfaBZ8O^bY;0
+!s100 Hh@eT8f><@8Z^22AC9ni91
+R8
+32
+R32
+!i10b 1
+R33
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd|
+Z63 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Proc.vhd|
+!i113 1
+R13
+R14
+Abeh_proc
+R1
+R2
+R3
+R4
+DEx4 work 4 proc 0 22 ?<V=zILT?dAfaBZ8O^bY;0
+l144
+L19
+VPbMQPBLV_RUThZJkRNYd=3
+!s100 C[AZ2iaA2b?D6mzF5lUlS1
+R8
+32
+R32
+!i10b 1
+R33
+R62
+R63
+!i113 1
+R13
+R14
+Erega
+Z64 w1479683401
+R1
+R2
+R3
+R4
+R5
+Z65 8C:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd
+Z66 FC:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd
+l0
+L7
+VH]b@0d@dT]M^Z2cKDB:>41
+!s100 6?dj6?1SLF0AD43lJgmNo3
+R8
+32
+R32
+!i10b 1
+R33
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd|
+Z68 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/RegA.vhd|
+!i113 1
+R13
+R14
+Aregistrorega
+R1
+R2
+R3
+R4
+DEx4 work 4 rega 0 22 H]b@0d@dT]M^Z2cKDB:>41
+l19
+L17
+V5ab^SV55RS[Ooki^SVbHG3
+!s100 O0YQLP6LFW<ffWcKSIAJE1
+R8
+32
+R32
+!i10b 1
+R33
+R67
+R68
+!i113 1
+R13
+R14
+Eregout
+Z69 w1479683257
+R1
+R2
+R3
+R4
+R5
+Z70 8C:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd
+Z71 FC:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd
+l0
+L7
+V53PCFG]mgKES9Kd;H`U`e3
+!s100 3D>bR64DBnRoKWfYIUi]H0
+R8
+32
+R9
+!i10b 1
+R10
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd|
+Z73 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/RegOut.vhd|
+!i113 1
+R13
+R14
+Aregistroregout
+R1
+R2
+R3
+R4
+DEx4 work 6 regout 0 22 53PCFG]mgKES9Kd;H`U`e3
+l19
+L17
+VDO4]ke>dz4Hj1QmaVjTNc0
+!s100 h2@PBMQL]C4a_4b>zZn_Y2
+R8
+32
+R9
+!i10b 1
+R10
+R72
+R73
+!i113 1
+R13
+R14
+Eregs
+Z74 w1479665014
+R1
+R2
+R3
+R4
+R5
+Z75 8C:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd
+Z76 FC:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd
+l0
+L6
+VfL65_6RMTbZzDf<h6`]9W1
+!s100 OX5LQo[imnN_]U_Ui]3X>2
+R8
+32
+R32
+!i10b 1
+Z77 !s108 1480036652.000000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd|
+Z79 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Regs.vhd|
+!i113 1
+R13
+R14
+Aregisters_table_arq
+R1
+R2
+R3
+R4
+DEx4 work 4 regs 0 22 fL65_6RMTbZzDf<h6`]9W1
+l22
+L16
+V`T71jB@cL?4mKOLdPPMo03
+!s100 J]C?V_7nGY8YFO8N:[76F3
+R8
+32
+R32
+!i10b 1
+R77
+R78
+R79
+!i113 1
+R13
+R14
+Erom
+Z80 w1480019741
+R1
+R2
+R3
+R4
+R5
+Z81 8C:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd
+Z82 FC:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd
+l0
+L6
+VY`96_a8z6aY=REoTfLemf0
+!s100 gHiW7iK6^AP:3RkR<k9=I2
+R8
+32
+R9
+!i10b 1
+R10
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd|
+Z84 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Rom.vhd|
+!i113 1
+R13
+R14
+Aerom
+R1
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 Y`96_a8z6aY=REoTfLemf0
+l14
+L12
+VeemJS22XdcO]FmT]5glMm3
+!s100 4kc_^oaW8;hNKdG<kNVbg2
+R8
+32
+R9
+!i10b 1
+R10
+R83
+R84
+!i113 1
+R13
+R14
+Etestbenchdecode
+Z85 w1480034127
+R1
+R2
+R3
+R4
+R5
+Z86 8C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd
+Z87 FC:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd
+l0
+L7
+VKK;<;CQgTWRKR@Z=]FT^J2
+!s100 UEIF5V;Zej8LN9M?79THD0
+R8
+32
+R50
+!i10b 1
+R51
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd|
+Z89 !s107 C:\Users\user\Documents\u3f\disenologico\modelsim\Testbench.vhd|
+!i113 1
+R13
+R14
+Atestdecode
+R1
+R2
+R3
+R4
+DEx4 work 15 testbenchdecode 0 22 KK;<;CQgTWRKR@Z=]FT^J2
+l28
+L10
+V>8:FfaoUjQ`:5jfXLW9n92
+!s100 hNYZ64Ig0ecOXkbBcJgnJ0
+R8
+32
+R50
+!i10b 1
+R51
+R88
+R89
+!i113 1
+R13
+R14
+Etestbenchproc
+Z90 w1480036980
+R1
+R2
+R3
+R4
+R5
+Z91 8C:/Users/user/Documents/u3f/disenologico/modelsim/Proc_tb.vhd
+Z92 FC:/Users/user/Documents/u3f/disenologico/modelsim/Proc_tb.vhd
+l0
+L7
+VQZN9kI9NjT1:08]XHLc=O0
+!s100 0h[BX1ghzVnD7zIR=L:8X0
+R8
+32
+Z93 !s110 1480036987
+!i10b 1
+Z94 !s108 1480036987.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Documents/u3f/disenologico/modelsim/Proc_tb.vhd|
+Z96 !s107 C:/Users/user/Documents/u3f/disenologico/modelsim/Proc_tb.vhd|
+!i113 1
+R13
+R14
+Atestproc
+R1
+R2
+R3
+R4
+Z97 DEx4 work 13 testbenchproc 0 22 QZN9kI9NjT1:08]XHLc=O0
+l38
+L10
+VLFY=<1ZKz7lXBU0OTRZ2:2
+!s100 gF>=WBJ=:JLbM7PFF49H]2
+R8
+32
+R93
+!i10b 1
+R94
+R95
+R96
+!i113 1
+R13
+R14

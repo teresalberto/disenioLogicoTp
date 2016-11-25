@@ -1,0 +1,54 @@
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.std_logic_unsigned.ALL;
+use ieee.std_logic_arith.ALL;
+
+entity testbenchProc is
+end testbenchProc;
+
+architecture testProc of testbenchProc is 
+	component Proc 
+	port ( 
+		clk, rst: in std_logic;
+		input : in  std_logic_vector (7 downto 0);
+         	output : out  std_logic_vector (7 downto 0));
+	end component;
+	
+signal clock, reset: std_logic; 
+signal input_out_2mux: std_logic_vector(7 downto 0);
+signal regout_out_output: std_logic_vector(7 downto 0);
+
+signal pc_out_rom: std_logic_vector(6 downto 0);
+signal rom_out_ir: std_logic_vector(15 downto 0);
+signal ir_out: std_logic_vector(15 downto 0);
+signal decode_out_regout: std_logic;
+signal decode_out_regs: std_logic;
+signal decode_out_alu: std_logic_vector(2 downto 0);
+signal decode_out_rega: std_logic;
+signal decode_out_mux: std_logic_vector(1 downto 0);
+signal mux_out_rega: std_logic_vector(7 downto 0);
+signal mux_out_alua: std_logic_vector(7 downto 0);
+signal rega_out_alub: std_logic_vector(7 downto 0);
+signal alu_out: std_logic_vector(7 downto 0);
+signal regs_out_0mux: std_logic_vector(7 downto 0);
+
+
+
+begin 
+	uut: Proc port map( 
+	clk => clock,
+        rst => reset,
+	input => input_out_2mux,
+	output => regout_out_output);
+ 
+  	process
+  		begin
+			clock <= '0';
+			wait for 10ns;
+			assert pc_out_rom = "00000000" report "primera instrucción";
+			wait for 10ns;
+      			clock <= '1';
+			wait for 10ns;
+  	end process; 
+end testProc;
